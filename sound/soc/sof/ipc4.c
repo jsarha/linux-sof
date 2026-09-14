@@ -741,7 +741,7 @@ static int ipc4_fw_ready(struct snd_sof_dev *sdev, struct sof_ipc4_msg *ipc4_msg
 		return 0;
 	}
 
-	/* sizeof(u32)is for skiping the first separator magic number */
+	/* sizeof(u32) is for skiping the first separator magic number */
 	sof_ipc4_create_debug_slot_ro_debugfs_node(sdev, SOF_IPC4_DEBUG_SLOT_TELEMETRY,
 						   sizeof(u32), "exception");
 
